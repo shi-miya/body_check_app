@@ -1,13 +1,16 @@
 new page
+<%= link_to "top", root_path%>
 
 <%= form_with model: @body_info do |f| %>
+  <p>日付</p>
+  <%= f.text_field :day, class: "inputDay" %>
   <P class="weight">体重</P>
-  <%= f.number_field :weight, class: "inputWeight" %>
+  <%= f.number_field :weight, step: "0.1", class: "inputWeight" %>
   <p>BMI</p>
-  <%= f.number_field :bmi %>
+  <%= f.number_field :bmi, step: "0.1" %>
   <p>体脂肪率</p>
-  <%= f.number_field :body_fat %>
+  <%= f.number_field :body_fat, step: "0.1" %>
   <p>内臓脂肪</p>
-  <%= f.number_field :visceral_fat %>
+  <%= f.number_field :visceral_fat, step: "0.1" %>
   <%= f.submit value:"send"%>
 <% end %>

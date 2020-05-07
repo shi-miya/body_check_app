@@ -1,1 +1,21 @@
 top page
+<%= link_to "new", new_body_info_path  %>
+<table>
+  <tr>
+    <th>
+      <p>日付</p>
+    </th>
+  </tr>
+</table>
+<% @body_infos.each do |b|%>
+  <p>日付</p>
+  <%= b.day %>
+  <P class="weight">体重</P>
+  <%= b.weight%>
+  <p>BMI</p>
+  <%= b.bmi%>
+  <p>体脂肪率</p>
+  <%= b.body_fat %>
+  <p>内臓脂肪</p>
+  <%= b.visceral_fat %>
+<% end %>

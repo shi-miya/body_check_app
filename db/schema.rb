@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_06_132840) do
+ActiveRecord::Schema.define(version: 2020_05_07_122516) do
 
   create_table "body_infos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "weight"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_05_06_132840) do
     t.integer "visceral_fat"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "day"
   end
 
 end
