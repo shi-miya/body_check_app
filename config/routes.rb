@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'body_infos#index'
+  resources :body_infos, only:[:index, :new]
 end

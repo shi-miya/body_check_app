@@ -1,0 +1,13 @@
+new page
+
+<%= form_with model: @body_info do |f| %>
+  <P class="weight">体重</P>
+  <%= f.number_field :weight, class: "inputWeight" %>
+  <p>BMI</p>
+  <%= f.number_field :bmi %>
+  <p>体脂肪率</p>
+  <%= f.number_field :body_fat %>
+  <p>内臓脂肪</p>
+  <%= f.number_field :visceral_fat %>
+  <%= f.submit value:"send"%>
+<% end %>
