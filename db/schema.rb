@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_07_122516) do
+ActiveRecord::Schema.define(version: 2020_05_07_222232) do
 
   create_table "body_infos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "weight"
+    t.float "weight"
     t.integer "bmi"
     t.integer "body_fat"
     t.integer "visceral_fat"
